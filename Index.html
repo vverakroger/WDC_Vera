@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <title>VVK Software</title>
+    <meta name="title" content="VVK Software Development">
+    <meta name="keywords" content="software,web,development,webpage,quality,design">
+    <meta name="Description" content="VVK Software is a company dedicated to custom software dsolutions for startups, companies, etc.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+        <img src="css/Multimedia/Logo.png" id="navbar__logo" alt="Company logo"/>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar__list">
+            <a href="#home">Home</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contactUs"><button class="btn__azul">Contact Us</button></a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact Us</a>
+              </li> 
+            </ul>
+        </div> 
+    </nav>
+    <section id="home" class="container">
+        <div id="home__izq">
+            <h1 class="titulo__azul__mediano home__distancia">We create quality products</h1>
+            <h3 class="titulo__azul__chico home__distancia">If you are thinking of creating your website and you don't know how or where to start, we are the perfect option for you.</h3>
+            <a href="#contactUs"><button formaction="#ContactUs" class="btn__azul home__distancia" >Ready to get started</button></a>
+        </div>
+        <div id="home__der">
+            <img id="home__der__img" src="css/Multimedia/Fondo.png" alt="Decoration photograph with the company website inside a laptop" />
+        </div>
+    </section>
+    <section id="aboutUs" class="container">
+        <div id="aboutUs__content">
+            <h2 class="titulo__rosa__mediano aboutUs__distancia">About Us</h2>
+            <h3 class="titulo__rosa__chico aboutUs__distancia">We are a software company founded in 2021. We focus on tackling short high-impact projects. We have a team of experts in security, infrastructure, testing, fullstack development and web design.</h3>
+            <video id="aboutUs__video" src="css/Multimedia/AboutUs.mp4#t=01,20" alt="video promotional about the company services" controls>
+			  Your browser does not support the video tag.  <code>video</code>.
+			</video>
+        </div>
+    </section>
+    <section id="services" class="container">
+        <h2 class="titulo__azul__mediano services__distancia">Services</h2>
+        <div id="services__grid">
+            <div>
+                <img src="css/Multimedia/Development.png" alt="Multimedia icon image">
+                <h3 class="titulo__azul__chico">UI/UX Design</h3>
+            </div>
+            <div>
+                <img src="css/Multimedia/Design.png " alt="Design icon image">
+                <h3 class="titulo__azul__chico">Web Development</h3>
+            </div>
+            <div>
+                <img src="css/Multimedia/QA.png" alt="QA icon image">
+                <h3 class="titulo__azul__chico">QA Verification</h3>
+            </div>
+            <div>
+                <img src="css/Multimedia/BugFix.png" alt="BugFix icon image">
+                <h3 class="titulo__azul__chico">Bug Fix</h3>
+            </div>
+        </div>
+    </section>
+    <section id="contactUs" class="container">
+        <h2 class="titulo__rosa__mediano contactUs__distance">Contact Us</h2>
+        <form class="titulo__rosa__chico" action="WebDevelopmentCompany_Vera.html" method="GET" enctype="text/plain">
+            <label for="Name" class="contactUs__space">Name:</label>
+            <input type="text" id="Name" name="Name" class="contactUs__space contactUs__input__text1">
+            <label for="Email" class="contactUs__space">E-mail:</label>
+            <input type="Email" id="Email" name="Email" class="contactUs__space contactUs__input__text1">
+            <label for="Proj" class="contactUs__space">Tell us about your project:</label>
+            <input type="text" id="Proj" name="Proj" class="contactUs__space contactUs__input__text2">
+            <div class="contactUs__space">
+                <label>I agree to the website Terms & Conditions</label>
+                <input type="checkbox" name="acepta" value="1" />
+            </div>
+            <div id="contactUs__btn">
+                <input type="submit" name="Send" value="Send" class="btn__rosa contactUs__space">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <section id="footer__der">
+            <ul>
+                <li><a href="PrivacyAndSecurity.html " class="footer__text__color">Privacy and Security</a></li>
+                <li><a href="TermsOfUse.html " class="footer__text__color">Terms Of Use</a></li>
+                <li><a href="LegalInformation.html " class="footer__text__color">Legal Information</a></li>
+                <li><a href="Community.html " class="footer__text__color">Community</a></li>
+            </ul>
+        </section>
+        <section id="footer__izq">
+            <a href="http://facebook.com "><img src="css/Multimedia/Facebook.png " alt="facebook logo"></a>
+            <a href="http://instagram.com "><img src="css/Multimedia/Instagram.png " alt="instagram logo"></a>
+            <a href="http://linkedin.com "><img src="css/Multimedia/Linkedin.png " alt="linkedin logo"></a>
+            <a href="http://twitter.com "><img src="css/Multimedia/Twitter.png " alt="twitter logo"></a>
+        </section>
+    </footer>
+</body>
+
+</html>
