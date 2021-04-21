@@ -1,0 +1,49 @@
+/*Nav*/
+$blue:#2E4D5E;
+$pink:#CC8C82;
+$fullHeight: 100vh;
+$fullWidth: 100%;
+ 
+.navbar {
+    width: $fullWidth;
+    background-color: $pink;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+}
+
+#navbar__logo {
+    width: $fullWidth/5;
+    margin: 20px 0px 20px 0px;
+    padding-left: $fullWidth/20;
+}
+
+.navbar__list {
+    width: $fullWidth;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        white-space: pre;
+        &:hover {
+            transition: 2s;
+            color: $blue;
+        }
+    }
+    
+}
+
+#collapsibleNavbar {
+    color: white;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    visibility:hidden;
+    width: 0;
+
+}
+
+

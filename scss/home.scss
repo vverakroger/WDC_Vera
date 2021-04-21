@@ -1,0 +1,32 @@
+/*Home*/
+$blue:#2E4D5E;
+$pink:#CC8C82;
+$fullHeight: 100vh;
+
+
+#home {
+    text-align: center;
+    border-bottom: double;
+    border-color: $blue;
+    display: flex;
+    align-items: center;
+    height: $fullHeight;
+    padding-top: ($fullHeight/10)*3;
+}
+
+#home__izq {
+    width: 50%;
+}
+
+#home__der {
+    width: 50%;
+}
+
+#home__der__img {
+    width: 70%;
+}
+
+.home__distancia {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

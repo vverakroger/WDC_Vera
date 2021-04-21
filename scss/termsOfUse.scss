@@ -1,0 +1,30 @@
+/*Terms of Use*/
+
+#termsOfUse {
+    margin: 0% 10% 0% 10%;
+    text-align: left;
+    border-bottom: double;
+    border-color: #2E4D5E;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#termsOfUse ol {
+    counter-reset: cupcake;
+    padding-left: 32px;
+    font-weight: bold;
+    color: #2E4D5E;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#termsOfUse ol li {
+    margin-top: 5%;
+    font-weight: bold;
+    color: #2E4D5E;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+

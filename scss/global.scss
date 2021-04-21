@@ -1,0 +1,126 @@
+/*Global*/
+
+//Crea tres clases (azul1, azul2, azul3) de color azul y tamaños 10, 20, 30px
+@for $i from 1 through 3 {
+    .azul#{$i} { 
+        color: #2E4D5E;
+        font-size: 10*$i;
+    }
+  }
+  
+//Crea tres clases (rosa1, rosa2, rosa3) de color rosa y tamaños 10, 20, 30px
+@each $i in 1, 2, 3 {
+    .rosa#{$i} {
+        color: #CC8C82;
+        font-size: 10*$i;
+    }
+ }
+ 
+ //Map de paleta de colores de la web
+ $colores: (blue:#2E4D5E, pink: #CC8C82, white: #FFFFFF);
+
+ //Crea las variables blue pink y white con sus respectivos colores
+ @each $name, $value in $colores{
+    .#{$name}{
+        color: $value
+    }
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.titulo__azul__grande {
+    color: #2E4D5E;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.titulo__azul__mediano {
+    color: #2E4D5E;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.titulo__azul__chico {
+    color: #2E4D5E;
+    font-size: 24px;
+    word-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.titulo__rosa__grande {
+    color: #CC8C82;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.titulo__rosa__mediano {
+    color: #CC8C82;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.titulo__rosa__chico {
+    color: #CC8C82;
+    font-size: 24px;
+    word-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.btn__azul {
+    background: linear-gradient(to left, #709BB2, #3D6276);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    overflow: hidden;
+    border: 0;
+}
+
+.btn__azul:hover {
+    cursor: pointer;
+    transition: 2s;
+    background: linear-gradient(to left, #385463, #3D6276);
+    transform: scale(1.1) perspective(1px);
+}
+
+.btn__rosa {
+    background: linear-gradient(to left, #D7AAA2, #AD7167);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    overflow: hidden;
+    border: 0;
+}
+
+.btn__rosa:hover {
+    cursor: pointer;
+    transition: 2s;
+    background: linear-gradient(to left, #996B63, #AD7167);
+    transform: scale(1.1) perspective(1px);
+}
