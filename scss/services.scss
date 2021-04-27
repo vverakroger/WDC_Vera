@@ -3,29 +3,31 @@ $blue:#2E4D5E;
 $fullWidth: 100%;
 
 #services {
+    height: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
     text-align: center;
     border-bottom: double;
     border-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    #services__grid {
+        display: grid;
+        grid-template-columns: ($fullWidth/4) ($fullWidth/4) ($fullWidth/4) ($fullWidth/4);
+        align-items: center;
+        justify-items: center;
+        white-space: pre;
+        div {
+            display: grid;
+            grid-template-columns: $fullWidth;
+            grid-template-rows: $fullWidth/2;
+            align-items: center;
+            justify-items: center;
+            white-space: pre;
+        }
+    }
 }
 
-.services__distancia {
-    margin: 0% 0% ($fullWidth/20) 0%;
-}
 
-#services__grid {
-    display: grid;
-    grid-template-columns: ($fullWidth/4) ($fullWidth/4) ($fullWidth/4) ($fullWidth/4);
-    align-items: center;
-    justify-items: center;
-    white-space: pre;
-}
-
-#services__grid div {
-    display: grid;
-    grid-template-columns: $fullWidth;
-    grid-template-rows: $fullWidth/2;
-    align-items: center;
-    justify-items: center;
-    white-space: pre;
-}
 

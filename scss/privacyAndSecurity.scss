@@ -1,10 +1,11 @@
 /*Privacy and Security*/
+@import "variables";
 
 #privacyAndSec {
     margin: 0% 10% 0% 10%;
     text-align: left;
     border-bottom: double;
-    border-color: #2E4D5E;
+    border-color: $blue;
     padding-top: 15%;
     padding-bottom: 15%;
     display: flex;
@@ -15,7 +16,7 @@
     counter-reset: cupcake;
     padding-left: 32px;
     font-weight: bold;
-    color: #2E4D5E;
+    color: $blue;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -23,7 +24,7 @@
 #privacyAndSec ol li {
     margin-top: 5%;
     font-weight: bold;
-    color: #2E4D5E;
+    color: $blue;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }

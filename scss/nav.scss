@@ -6,6 +6,7 @@ $fullWidth: 100%;
  
 .navbar {
     width: $fullWidth;
+    height: $fullHeight/5;
     background-color: $pink;
     display: flex;
     overflow: hidden;

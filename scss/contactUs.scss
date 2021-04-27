@@ -1,7 +1,8 @@
 /*Contact Us*/
+@import "variables";
 
 #contactUs form {
-    color: #CC8C82;
+    color: $pink;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     display: grid;

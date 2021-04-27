@@ -1,30 +1,5 @@
 /*Global*/
-
-//Crea tres clases (azul1, azul2, azul3) de color azul y tamaños 10, 20, 30px
-@for $i from 1 through 3 {
-    .azul#{$i} { 
-        color: #2E4D5E;
-        font-size: 10*$i;
-    }
-  }
-  
-//Crea tres clases (rosa1, rosa2, rosa3) de color rosa y tamaños 10, 20, 30px
-@each $i in 1, 2, 3 {
-    .rosa#{$i} {
-        color: #CC8C82;
-        font-size: 10*$i;
-    }
- }
- 
- //Map de paleta de colores de la web
- $colores: (blue:#2E4D5E, pink: #CC8C82, white: #FFFFFF);
-
- //Crea las variables blue pink y white con sus respectivos colores
- @each $name, $value in $colores{
-    .#{$name}{
-        color: $value
-    }
- }
+@import "variables";
 
 * {
     margin: 0;
@@ -38,21 +13,21 @@
 }
 
 .titulo__azul__grande {
-    color: #2E4D5E;
+    color: $blue;
     font-size: 42px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 .titulo__azul__mediano {
-    color: #2E4D5E;
+    color: $blue;
     font-size: 32px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 .titulo__azul__chico {
-    color: #2E4D5E;
+    color: $blue;
     font-size: 24px;
     word-spacing: 4px;
     font-family: 'Open Sans', sans-serif;
@@ -60,21 +35,21 @@
 }
 
 .titulo__rosa__grande {
-    color: #CC8C82;
+    color: $pink;
     font-size: 42px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 .titulo__rosa__mediano {
-    color: #CC8C82;
+    color: $pink;
     font-size: 32px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 .titulo__rosa__chico {
-    color: #CC8C82;
+    color: $pink;
     font-size: 24px;
     word-spacing: 4px;
     font-family: 'Open Sans', sans-serif;

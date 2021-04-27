@@ -1,4 +1,5 @@
 /*Community*/
+@import "variables";
 
 #community {
     text-align: center;
@@ -8,13 +9,13 @@
 
 .community__titulo {
     margin: 5%;
-    color: #2E4D5E;
+    color: $blue;
     font-size: 28px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .community__text {
-    color: #2E4D5E;
+    color: $blue;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
