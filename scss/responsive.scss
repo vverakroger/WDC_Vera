@@ -4,13 +4,12 @@
     #aboutUs__content {
         margin: 0;
     }
-    #services__grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 60% 60%;
-        align-items: center;
-        justify-items: center;
-        white-space: pre;
+    #services {
+        #services__grid {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60% 60%;
+            row-gap: 10%;
+        }
     }
     #contactUs form {
         margin-left: 0%;
@@ -23,12 +22,16 @@
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 60% 60%;
+        row-gap: 5%;
         justify-items: start;
     }
 }
 
 @media (max-width: 768px) {
     /*600px to 768px*/
+    .navbar{
+        height: auto;
+    }
     #collapsibleNavbar {
         visibility: visible;
     }
@@ -87,14 +90,7 @@
         margin-left: 0%;
         margin-right: 0%
     }
-    #services__grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 30%;
-        align-items: center;
-        justify-items: center;
-        white-space: pre;
-    }
+    
     footer ul {
         grid-template-columns: 100%;
         grid-template-rows: 30%;
