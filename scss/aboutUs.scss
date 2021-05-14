@@ -3,27 +3,27 @@
 
 #aboutUs {
     height: 100vh;
-    padding-top: 20vh;
+    padding-top: 25vh;
     padding-bottom: 20vh;
     text-align: center;
     border-bottom: double;
     border-color: $pink;
+    #aboutUs__content {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #aboutUs__video {
+        width: 50%;
+        height: auto;
+        border: double;
+        border-color: $pink;
+    }
 }
 
-#aboutUs__content {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
 
-#aboutUs__video {
-    width: 50%;
-    height: auto;
-    border: double;
-    border-color: $pink;
-}
 

@@ -3,51 +3,67 @@
 
 footer {
     width: $fullWidth;
+    height: 20vh;
     background-color: $blue;
     display: flex;
-    overflow: hidden;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#footer__izq {
-    width: ($fullWidth/10)*4;
-    padding-left: $fullWidth/50;
-    padding-right: $fullWidth/50;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-}
-
-#footer__der {
-    width: ($fullWidth/10)*6;
-    padding-left: $fullWidth/50;
-    padding-right: $fullWidth/50;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.footer__text__color {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
     overflow: hidden;
-    white-space: pre;
+    #footer__up {
+        height: 12vh;
+        width: 40%;
+        padding-left: $fullWidth/50;
+        padding-right: $fullWidth/50;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            cursor: context-menu;
+        }
+        img {
+            width: 30%;
+            &:hover{
+                cursor: pointer;
+                transition: 0.8s;
+                transform: scale(1.1) perspective(1px);
+            }
+        }
+    }
+    #footer__down {
+        height: 8vh;
+        width: 60%;
+        ul {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 100%;
+            justify-items: center;
+            list-style-type: none;
+        }
+    }
+    .footer__text__color {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        overflow: hidden;
+        white-space: pre;
+        &:hover {
+            transition: 0.8s;
+            color: $pink;
+        }
+    } 
 }
 
-.footer__text__color:hover {
-    transition: 2s;
-    color: $pink;
-}
 
-footer section img {
-    width: ($fullWidth/10)*4.5;
-}
+
+
+
+
+
+
+
+

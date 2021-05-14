@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 
 <head>
@@ -47,12 +46,12 @@
     </nav>
     <section id="home" class="container">
         <div id="home__izq">
-            <h1 class="titulo__azul__mediano home__distancia">We create quality products</h1>
-            <h3 class="titulo__azul__chico home__distancia">If you are thinking of creating your website and you don't know how or where to start, we are the perfect option for you.</h3>
-            <a href="#contactUs"><button formaction="#ContactUs" class="btn__azul home__distancia" >Ready to get started</button></a>
+            <h1 class="titulo__azul__mediano">We create quality products</h1>
+            <h3 class="titulo__azul__chico">If you are thinking of creating your website and you don't know how or where to start, we are the perfect option for you!</h3>
+            <a href="#contactUs"><button formaction="#ContactUs" class="btn__azul" >Ready to get started</button></a>
         </div>
         <div id="home__der">
-            <img id="home__der__img" src="css/Multimedia/Fondo.png" alt="Decoration photograph with the company website inside a laptop" />
+            <img src="css/Multimedia/Fondo.png" alt="Decoration photograph with the company website inside a laptop" />
         </div>
     </section>
     <section id="aboutUs">
@@ -86,25 +85,27 @@
         </div>
     </section>
     <section id="contactUs" class="container">
-        <h2 class="titulo__rosa__mediano contactUs__distance">Contact Us</h2>
+        <h2 class="titulo__rosa__mediano">Contact Us</h2>
         <form class="titulo__rosa__chico" action="WebDevelopmentCompany_Vera.html" method="GET" enctype="text/plain">
-            <label for="Name" class="contactUs__space">Name:</label>
-            <input type="text" id="Name" name="Name" class="contactUs__space contactUs__input__text1">
-            <label for="Email" class="contactUs__space">E-mail:</label>
-            <input type="Email" id="Email" name="Email" class="contactUs__space contactUs__input__text1">
-            <label for="Proj" class="contactUs__space">Tell us about your project:</label>
-            <input type="text" id="Proj" name="Proj" class="contactUs__space contactUs__input__text2">
-            <div class="contactUs__space">
-                <label>I agree to the website Terms & Conditions</label>
-                <input type="checkbox" name="acepta" value="1" />
-            </div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" class="contactUs__input1">
+            <label for="Email">E-mail:</label>
+            <input type="Email" id="Email" name="Email" class="contactUs__input1">
+            <label for="Proj">Tell us about your project:</label>
+            <input type="text" id="Proj" name="Proj" class=" contactUs__input2">
             <div id="contactUs__btn">
-                <input type="submit" name="Send" value="Send" class="btn__rosa contactUs__space">
+                <a href="termsOfUse.html"><input type="submit" name="Send" value="Send" class="btn__rosa"></a>
             </div>
         </form>
     </section>
     <footer>
-        <section id="footer__der">
+        <section id="footer__up">
+            <a href="http://facebook.com "><img src="css/Multimedia/Facebook.png " alt="facebook logo"></a>
+            <a href="http://instagram.com "><img src="css/Multimedia/Instagram.png " alt="instagram logo"></a>
+            <a href="http://linkedin.com "><img src="css/Multimedia/Linkedin.png " alt="linkedin logo"></a>
+            <a href="http://twitter.com "><img src="css/Multimedia/Twitter.png " alt="twitter logo"></a>
+        </section>
+        <section id="footer__down">
             <ul>
                 <li><a href="privacyAndSecurity.html " class="footer__text__color">Privacy and Security</a></li>
                 <li><a href="termsOfUse.html " class="footer__text__color">Terms Of Use</a></li>
@@ -112,13 +113,17 @@
                 <li><a href="community.html " class="footer__text__color">Community</a></li>
             </ul>
         </section>
-        <section id="footer__izq">
-            <a href="http://facebook.com "><img src="css/Multimedia/Facebook.png " alt="facebook logo"></a>
-            <a href="http://instagram.com "><img src="css/Multimedia/Instagram.png " alt="instagram logo"></a>
-            <a href="http://linkedin.com "><img src="css/Multimedia/Linkedin.png " alt="linkedin logo"></a>
-            <a href="http://twitter.com "><img src="css/Multimedia/Twitter.png " alt="twitter logo"></a>
-        </section>
+        
     </footer>
+
+    <script>
+        $(document).ready(function () {
+          $(".nav-link").click(function () {
+            $(".collapse").removeClass("show");
+          });
+        });
+    </script>
+
 </body>
 
 </html>

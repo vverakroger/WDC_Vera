@@ -73,7 +73,7 @@
 
 .btn__azul:hover {
     cursor: pointer;
-    transition: 2s;
+    transition: 0.8s;
     background: linear-gradient(to left, #385463, #3D6276);
     transform: scale(1.1) perspective(1px);
 }
@@ -95,7 +95,7 @@
 
 .btn__rosa:hover {
     cursor: pointer;
-    transition: 2s;
+    transition: 0.8s;
     background: linear-gradient(to left, #996B63, #AD7167);
     transform: scale(1.1) perspective(1px);
 }

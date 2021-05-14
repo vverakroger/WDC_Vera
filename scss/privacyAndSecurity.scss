@@ -4,10 +4,8 @@
 #privacyAndSec {
     margin: 0% 10% 0% 10%;
     text-align: left;
-    border-bottom: double;
-    border-color: $blue;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 30vh;
+    padding-bottom: 15vh;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +15,7 @@
     padding-left: 32px;
     font-weight: bold;
     color: $blue;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,6 +23,7 @@
     margin-top: 5%;
     font-weight: bold;
     color: $blue;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }

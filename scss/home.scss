@@ -7,23 +7,20 @@
     border-color: $blue;
     display: flex;
     align-items: center;
-    height: $fullHeight;
-    padding-top: ($fullHeight/10)*3;
+    height: 100vh;
+    padding-top: 30vh;
+    #home__izq {
+        height: 40vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #home__der {
+        width: 50%;
+        img {
+            width: 70%;
+        }
+    }
 }
 
-#home__izq {
-    width: 50%;
-}
-
-#home__der {
-    width: 50%;
-}
-
-#home__der__img {
-    width: 70%;
-}
-
-.home__distancia {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}

@@ -1,33 +1,38 @@
 /*Contact Us*/
 @import "variables";
 
-#contactUs form {
-    color: $pink;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    display: grid;
-    text-align: left;
-    margin-left: 30%;
-    margin-right: 30%;
+#contactUs{
+    height: 100vh;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+    form {
+        height: 50vh;
+        color: $pink;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        display: grid;
+        text-align: left;
+        margin-left: 28%;
+        margin-right: 28%;
+        .contactUs__input1 {
+            height: 4vh;
+        }
+        .contactUs__input2 {
+            height: 10vh;
+        }
+        a{
+            color: $pink;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            &:hover{
+                color: #AD7167;
+                border-style: none;
+                text-decoration: none;
+            }
+        }
+        #contactUs__btn{
+            text-align: center;
+        }
+    }
 }
 
-.contactUs__input__text1 {
-    height: 30px;
-}
-
-.contactUs__input__text2 {
-    height: 80px;
-}
-
-.contactUs__space {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-#contactUs__btn{
-    text-align: center;
-}
-
-.contactUs__distance {
-    margin: 0% 0% 5% 0%;
-}
