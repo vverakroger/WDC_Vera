@@ -1,6 +1,12 @@
 # DesarrolloWebMarAbr2021
 HTML5 CSS Project Coder House Modulo Desarrollo Web Marzo Abril 2021
 
+### Visualización
+
+Es posible visualizar la web en:
+- https://vverakroger.github.io/WDC_Vera/
+- https://wdcvera.000webhostapp.com/
+
 ### Aplicar Seo:
 
 - **Imágenes:** Se comprimen los archivos sin pérdida .jpg y .png
