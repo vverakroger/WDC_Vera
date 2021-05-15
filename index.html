@@ -12,10 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
+    <!-- NavBar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
         <img src="css/Multimedia/Logo.png" id="navbar__logo" alt="Company logo"/>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -44,6 +46,7 @@
             </ul>
         </div> 
     </nav>
+    <!-- Home -->
     <section id="home" class="container">
         <div id="home__izq">
             <h1 class="titulo__azul__mediano">We create quality products</h1>
@@ -63,6 +66,7 @@
             </video>
         </div>
     </section>
+    <!-- Services -->
     <section id="services">
         <h2 class="titulo__azul__mediano">Services</h2>
         <div id="services__grid">
@@ -84,20 +88,22 @@
             </div>
         </div>
     </section>
+    <!-- Contact Us -->
     <section id="contactUs" class="container">
         <h2 class="titulo__rosa__mediano">Contact Us</h2>
-        <form class="titulo__rosa__chico" action="WebDevelopmentCompany_Vera.html" method="GET" enctype="text/plain">
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" name="Name" class="contactUs__input1">
-            <label for="Email">E-mail:</label>
-            <input type="Email" id="Email" name="Email" class="contactUs__input1">
-            <label for="Proj">Tell us about your project:</label>
-            <input type="text" id="Proj" name="Proj" class=" contactUs__input2">
+        <form name="contactForm" class="titulo__rosa__chico" action="javascript:void(0);" onsubmit="return validateForm()" method="post">
+            <label for="fName">Name:</label>
+            <input type="text" name="cf_name" class="contactUs__input1">
+            <label for="eMail">E-mail:</label>
+            <input type="Email" name="cf_email" class="contactUs__input1">
+            <label for="message">Tell us about your project:</label>
+            <input type="text" name="cf_message" class=" contactUs__input2">
             <div id="contactUs__btn">
-                <a href="termsOfUse.html"><input type="submit" name="Send" value="Send" class="btn__rosa"></a>
+                <a href="termsOfUse.html"><input type="submit" value="Send" class="btn__rosa"></a>
             </div>
         </form>
     </section>
+    <!-- Footer -->
     <footer>
         <section id="footer__up">
             <a href="http://facebook.com "><img src="css/Multimedia/Facebook.png " alt="facebook logo"></a>
@@ -116,12 +122,41 @@
         
     </footer>
 
+    <!-- Script -->
     <script>
+        /*close nav when selecting an icon in mobile version*/
         $(document).ready(function () {
           $(".nav-link").click(function () {
             $(".collapse").removeClass("show");
           });
         });
+        /*validate contact information and success message*/
+        function validateForm() {
+            var x = document.forms["contactForm"]["cf_name"].value;
+            var y = document.forms["contactForm"]["cf_email"].value;
+            var z = document.forms["contactForm"]["cf_message"].value;
+            if (x == "" || y == "" || z == "") {
+                swal({
+                    title: "Upss!",
+                    text: "No field can be empty",
+                    buttons: {
+                        cancel: "Close",
+                    },
+                })
+                return false;
+            }else{
+                swal({
+                    title: "Congrats!",
+                    text: "Sent your message successfully",
+                    buttons: {
+                        cancel: "Close",
+                    },
+                })
+                document.forms["contactForm"]["cf_name"].value='';
+                document.forms["contactForm"]["cf_email"].value='';
+                document.forms["contactForm"]["cf_message"].value='';
+            }
+        }
     </script>
 
 </body>

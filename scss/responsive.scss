@@ -57,18 +57,23 @@
     /*600px to 768px*/
     .navbar{
         height: auto;
-        #collapsibleNavbar {
-            visibility: visible;
-        }
-        .navbar__list{
-            visibility: hidden;
-        }
-        #navbar__logo{
-            display: none;
-        }
+    }
+    #collapsibleNavbar {
+        visibility: visible;
+    }
+    .navbar__list{
+        visibility: hidden;
+    }
+    #navbar__logo{
+        display: none;
     }
     #aboutUs__video {
         width: 100%;
+    }
+    #community {
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+        height: 260vh;
     }
     footer {
         height: 24vh;
@@ -119,18 +124,19 @@
         }
     }
     footer {
-        height: 30vh;
+        height: 35vh;
         #footer__up{
-            height: 10vh;
+            height: 12vh;
             width: 80%;
             img {
-                width: 45%;
+                width: 40%;
             }
         }
         #footer__down{
             height: 20vh;
             width: 80%;
             ul {
+                height: 20vh;
                 grid-template-columns: 100%;
                 grid-template-rows: 25% 25% 25% 25% ;
                 justify-items: start;

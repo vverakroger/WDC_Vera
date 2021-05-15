@@ -8,22 +8,20 @@
     padding-bottom: 15vh;
     display: flex;
     flex-direction: column;
-}
-
-#privacyAndSec ol {
-    counter-reset: cupcake;
-    padding-left: 32px;
-    font-weight: bold;
-    color: $blue;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#privacyAndSec ol li {
-    margin-top: 5%;
-    font-weight: bold;
-    color: $blue;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
+    ol {
+        counter-reset: cupcake;
+        padding-left: 32px;
+        font-weight: bold;
+        color: $blue;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        li {
+            margin-top: 5%;
+            font-weight: bold;
+            color: $blue;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            text-align: justify;
+        }
+    }
 }
